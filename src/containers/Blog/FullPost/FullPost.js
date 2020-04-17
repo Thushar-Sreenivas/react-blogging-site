@@ -21,7 +21,7 @@ class FullPost extends Component {
         
     }
     postDeleteHandler = () => {
-        axios.delete('https://jsonplaceholder.typicode.com/posts/' + this.props.id)
+        axios.delete('/posts/' + this.props.id)
         .then(response => {
             console.log(response)
         })
