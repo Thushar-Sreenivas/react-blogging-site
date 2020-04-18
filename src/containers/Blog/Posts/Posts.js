@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from '../../../axios'
 import Post from '../../../components/Post/Post'
 import './Posts.css'
+import { withRouter } from 'react-router-dom'
 class Posts extends Component {
     state = {
         posts: []
@@ -46,4 +47,4 @@ class Posts extends Component {
         )
     }
 }
-export default Posts
+export default withRouter( Posts )
